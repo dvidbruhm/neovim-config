@@ -1,5 +1,8 @@
 let g:plugged_home = '~/.vim/plugged'
 
+" FOR AUTOCOMPLETE TO WORK
+" pip install neovim jedi flake8
+
 " Plugins List
 call plug#begin(g:plugged_home)
   " UI related
@@ -116,5 +119,12 @@ let g:vim_markdown_conceal = 0
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <Space> :NERDTreeToggle<CR>
 
+let g:NERDTreeWinPos = "left"
+
+
 " Make commands open file in new tab
 set switchbuf=usetab,newtab
+
+" Set tab and shift-tab to indent/unindent in visual mode
+vmap <Tab> >gv
+vmap <S-Tab> <gv
