@@ -6,13 +6,13 @@ let g:plugged_home = '~/.vim/plugged'
 " Plugins List
 call plug#begin(g:plugged_home)
   " UI related
-  Plug 'chriskempson/base16-vim'
+  " Plug 'chriskempson/base16-vim'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   " Better Visual Guide
   Plug 'Yggdroot/indentLine'
   " syntax check
-  Plug 'w0rp/ale'
+  Plug 'dense-analysis/ale'
   " Autocomplete
   Plug 'ncm2/ncm2'
   Plug 'roxma/nvim-yarp'
@@ -38,7 +38,7 @@ syntax on
 syntax enable
 " colorscheme
 let base16colorspace=256
-colorscheme base16-dracula
+colorscheme popos_dracula
 set background=dark
 " True Color Support if it's avaiable in terminal
 if has("termguicolors")
