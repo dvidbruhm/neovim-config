@@ -3,9 +3,11 @@ let g:plugged_home = '~/.vim/plugged'
 call plug#begin(g:plugged_home)
 
 source ~/.config/nvim/coc.vim
-source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/better_indent.vim
 source ~/.config/nvim/rainbow_parenthese.vim
+source ~/.config/nvim/markdown.vim
+source ~/.config/nvim/goyo.vim
+source ~/.config/nvim/wintabs.vim
 
 call plug#end()
 
