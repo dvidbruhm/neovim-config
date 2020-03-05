@@ -22,10 +22,10 @@ set expandtab
 cnoreabbrev ww WriteSaveBuffer
 
 " Settings for the default nvim file explorer
-let g:netrw_liststyle = 3
-let g:netrw_banner = 0
-let g:netrw_winsize = 20
-map , :Lexplore<CR>
+"let g:netrw_liststyle = 3
+"let g:netrw_banner = 0
+"let g:netrw_winsize = 20
+"map , :Lexplore<CR>
 
 " Set all yank and paste to copy/paste to normal 
 " clipboard (same as ctrl-c/ctrl-v)
@@ -46,5 +46,4 @@ if has('persistent_undo')
     let &undodir = myUndoDir
     set undofile
 endif
-
 

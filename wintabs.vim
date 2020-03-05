@@ -1,7 +1,7 @@
 Plug 'zefei/vim-wintabs'
 
-map <C-H> <Plug>(wintabs_previous)
-map <C-L> <Plug>(wintabs_next)
+map <C-Left> <Plug>(wintabs_previous)
+map <C-Right> <Plug>(wintabs_next)
 map <C-T>c <Plug>(wintabs_close)
 map <C-T>u <Plug>(wintabs_undo)
 map <C-T>o <Plug>(wintabs_only)
