@@ -1,6 +1,12 @@
 " Set colorscheme
 colorscheme gruvbox_no_bg
 
+" Remove colors so background colors are the same as the terminal
+highlight clear SignColumn
+highlight clear TabLineFill
+highlight Normal ctermbg=none
+highlight clear StatusLine
+
 " Set tab and shift-tab to indent/unindent in visual mode
 vmap <Tab> >gv
 vmap <S-Tab> <gv
