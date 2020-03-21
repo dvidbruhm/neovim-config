@@ -57,3 +57,9 @@ sudo dpkg -i *.deb
 ```
 
 After this it is possible to boot using this kernel with the grub menu (e.g. ```esc``` during boot).
+
+To set the last booted kernel as default, edit ```/etc/default/grub``` and change these options:
+```
+ GRUB_DEFAULT=saved
+ GRUB_SAVEDEFAULT=true
+```
