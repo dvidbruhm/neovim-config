@@ -63,3 +63,10 @@ To set the last booted kernel as default, edit ```/etc/default/grub``` and chang
  GRUB_DEFAULT=saved
  GRUB_SAVEDEFAULT=true
 ```
+
+To fix output sound not varying with the volume slider (e.g. only mute or not muted output levels), put this before the PCM block in ```/usr/share/pulseaudio/alsa-mixer/paths/analog-output.conf.common```:
+```
+[Element Master]
+switch = mute
+volume = ignore
+```
