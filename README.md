@@ -70,3 +70,14 @@ To fix output sound not varying with the volume slider (e.g. only mute or not mu
 switch = mute
 volume = ignore
 ```
+
+To remove the "can't find command hwmatch" on boot, do:
+```
+# Maybe??
+sudo cp /usr/lib/grub/i386-pc/hwmatch.mod /boot/grub/x86_64-efi/hwmatch.mod
+
+
+sudo dpkg-reconfigure grub-pc
+```
+
+
