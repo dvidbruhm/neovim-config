@@ -44,3 +44,16 @@ Inside neovim:
 ```
 :PlugInstall
 ```
+
+Install different kernel version on ubuntu, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/ and select the wanted kernel version, download these files (this example is for 4.20.17):
+- linux-headers-4.20.17-042017_4.20.17-042017.201903190933_all.deb
+- linux-headers-4.20.17-042017-generic_4.20.17-042017.201903190933_amd64.deb
+- linux-image-unsigned-4.20.17-042017-generic_4.20.17-042017.201903190933_amd64.deb
+- linux-modules-4.20.17-042017-generic_4.20.17-042017.201903190933_amd64.deb
+
+Put all these files in the same folder, ```cd``` into it and run:
+```
+sudo dpkg -i *.deb
+```
+
+After this it is possible to boot using this kernel with the grub menu (e.g. ```esc``` during boot).
