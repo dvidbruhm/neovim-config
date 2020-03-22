@@ -43,6 +43,7 @@ Inside neovim:
 
 ```
 :PlugInstall
+:CocInstall coc-python
 ```
 
 Install different kernel version on ubuntu, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/ and select the wanted kernel version, download these files (this example is for 4.20.17):
