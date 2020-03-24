@@ -98,9 +98,11 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Alt><Shift>q']"
 
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift><Alt>Tab']"
-gsettings get org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
-gsettings get org.gnome.desktop.wm.keybindings switch-applications-backward "['<Shift><Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Shift><Super>Tab']"
 
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Alt>d']"
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Alt>Return']"
 ```
