@@ -81,4 +81,26 @@ sudo cp /usr/lib/grub/i386-pc/hwmatch.mod /boot/grub/x86_64-efi/hwmatch.mod
 sudo dpkg-reconfigure grub-pc
 ```
 
+To change gnome keybindings to i3 defaults:
 
+```
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Alt>1']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Alt>2']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Alt>3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Alt>4']"
+
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Alt><Shift>1']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Alt><Shift>2']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Alt><Shift>3']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Alt><Shift>4']"
+
+gsettings set org.gnome.desktop.wm.keybindings close "['<Alt><Shift>q']"
+
+gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward ['<Shift><Alt>Tab']
+gsettings get org.gnome.desktop.wm.keybindings switch-applications ['<Super>Tab']
+gsettings get org.gnome.desktop.wm.keybindings switch-applications-backward ['<Shift><Super>Tab']
+
+gsettings set org.gnome.shell.app-switcher current-workspace-only true
+gsettings set org.gnome.shell.keybindings toggle-overview "['<Alt>d']"
+```
