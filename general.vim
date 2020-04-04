@@ -1,6 +1,11 @@
 " Set colorscheme
 colorscheme gruvbox_no_bg
 
+" Enable yaml 2 width tab
+" add yaml stuffs
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2
+
 " Remove colors so background colors are the same as the terminal
 highlight clear SignColumn
 highlight clear TabLineFill
