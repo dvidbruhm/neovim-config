@@ -107,4 +107,5 @@ gsettings set org.gnome.shell.keybindings toggle-overview "['<Alt>d']"
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Alt>Return']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>Up']"
+gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen  "['<Alt>f']"
 ```
