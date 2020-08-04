@@ -1,5 +1,7 @@
 " Set colorscheme
-colorscheme gruvbox_no_bg
+colorscheme default
+highlight Pmenu ctermbg=darkgrey ctermfg=white
+highlight PmenuSel ctermbg=lightgreen ctermfg=black
 
 " Enable yaml 2 width tab
 " add yaml stuffs
