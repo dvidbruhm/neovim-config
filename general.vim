@@ -18,9 +18,9 @@ highlight clear StatusLine
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-" Set page-up/down to move half a screen and recenter
-nnoremap <PageUp> <C-u>zz
-nnoremap <PageDown> <C-d>zz
+" Set page-up/down to move half a screen
+nnoremap <PageUp> <C-u>
+nnoremap <PageDown> <C-d>
 
 " Set mouse navigation
 set mouse=a
