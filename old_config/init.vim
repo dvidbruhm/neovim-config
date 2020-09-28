@@ -7,7 +7,7 @@ source ~/.config/nvim/better_indent.vim
 source ~/.config/nvim/rainbow_parenthese.vim
 source ~/.config/nvim/markdown.vim
 source ~/.config/nvim/goyo.vim
-source ~/.config/nvim/wintabs.vim
+"source ~/.config/nvim/wintabs.vim
 source ~/.config/nvim/nerdtree.vim
 
 call plug#end()

@@ -4,6 +4,9 @@ Plug 'honza/vim-snippets'
 " if hidden is not set, TextEdit might fail.
 set hidden
 
+" Set some colors
+hi! CocWarningFloat ctermfg=Yellow
+
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
@@ -59,7 +62,7 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
-nmap <leader>r <Plug>(coc-rename)
+nmap <F2> <Plug>(coc-rename)
 
 " Remap for format selected region
 xmap <leader>f  <Plug>(coc-format-selected)

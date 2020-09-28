@@ -1,12 +1,16 @@
 " Set colorscheme
 colorscheme default
-highlight Pmenu ctermbg=darkgrey ctermfg=white
+highlight Pmenu ctermbg=darkgray ctermfg=white
 highlight PmenuSel ctermbg=lightgreen ctermfg=black
 
 " Enable yaml 2 width tab
 " add yaml stuffs
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2
+
+" Change color of warning popup
+hi! CocWarningFloat ctermfg=Blue
+hi! CocWarningSign ctermfg=Blue
 
 " Remove colors so background colors are the same as the terminal
 highlight clear SignColumn
@@ -18,9 +22,16 @@ highlight clear StatusLine
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
+" Replace in visual selection
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 " Set page-up/down to move half a screen
 nnoremap <PageUp> <C-u>
 nnoremap <PageDown> <C-d>
+
+" Set ctrl-up/down to move half a screen
+nnoremap <C-Up> <C-u>
+nnoremap <C-Down> <C-d>
 
 " Set mouse navigation
 set mouse=a
