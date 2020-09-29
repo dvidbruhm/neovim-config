@@ -12,7 +12,7 @@ highlight clear SignColumn
 
 set fillchars+=vert:\▏
 execute "hi VertSplit cterm=None ctermfg=".accentcolor
-execute "hi StatusLine cterm=standout ctermfg=".accentcolor
+execute "hi StatusLine cterm=standout,underline ctermfg=".accentcolor
 execute "hi StatusLineNC cterm=underline ctermfg=".accentcolor
 
 " Tab line style
@@ -91,6 +91,9 @@ nnoremap <S-Down> <C-d>
 " Remap leader key to space
 nnoremap <SPACE> <Nop>
 let mapleader = " "
+
+" Terminal escape to return to normal mode
+tnoremap <Esc> <C-\><C-n>
 
 
 

@@ -1,5 +1,9 @@
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Redefine warning colors
+hi CocWarningFloat ctermfg=blue
+hi CocWarningSign ctermfg=blue
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
