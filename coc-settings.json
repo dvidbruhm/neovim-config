@@ -3,7 +3,7 @@
     "ccls": {
       "command": "ccls",
       "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-      "rootPatterns": [".ccls",".ccls-root", "compile_commands.json"],
+      "rootPatterns": [".ccls",".ccls-root", "compile_commands.json", ".git"],
       "initializationOptions": {
          "cache": {
            "directory": ".ccls-cache"
@@ -14,5 +14,6 @@
   "python.jediEnabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "diagnostic.checkCurrentLine": true
+  "diagnostic.checkCurrentLine": true,
+  "python.linting.flake8Args": ["--extend-ignore=E501,E402"]
 }

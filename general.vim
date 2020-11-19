@@ -1,38 +1,35 @@
 
 """ BASIC STYLING
-"colorscheme default
+colorscheme default
+set background=dark
+
+" Add true colors
+if (has('termguicolors'))
+  set termguicolors
+endif
 
 " Split delimitations colors and style
-let accentcolor="blue"
-let secondarycolor="yellow"
-let fgcolor="black"
-
-" Clear diagnostic column background
-highlight clear SignColumn
-
 set fillchars+=vert:\▏
-execute "hi VertSplit cterm=None ctermfg=".accentcolor
-execute "hi StatusLine cterm=standout,underline ctermfg=".accentcolor
-execute "hi StatusLineNC cterm=underline ctermfg=".accentcolor
+hi VertSplit gui=None
+hi StatusLineNC gui=underline
+hi StatusLine gui=underline,standout
 
 " Tab line style
-execute "hi TabLineFill cterm=None ctermfg=".accentcolor
-execute "hi TabLineSel cterm=bold ctermbg=".accentcolor
-execute "hi TabLineSel ctermfg=".fgcolor
-execute "hi TabLine cterm=bold ctermbg=None ctermfg=".accentcolor
-execute "hi Title cterm=None ctermfg=".secondarycolor
-
+"execute "hi TabLineFill cterm=None ctermfg=".accentcolor
+"execute "hi TabLineSel cterm=bold ctermbg=".accentcolor
+"execute "hi TabLineSel ctermfg=".fgcolor
+"execute "hi TabLine cterm=bold ctermbg=None ctermfg=".accentcolor
+"execute "hi Title cterm=None ctermfg=".secondarycolor
+"
 " Popup menu colors
-highlight Pmenu ctermbg=darkgray ctermfg=white
-highlight PmenuSel ctermbg=lightgreen ctermfg=black
+highlight Pmenu guibg=gray guifg=white
+highlight PmenuSel guibg=white guifg=gray
 
 " Error highlighting color:
-highlight Error cterm=None ctermbg=DarkRed ctermfg=None
+"highlight Error cterm=None ctermbg=DarkRed ctermfg=None
 
 " Line number color
-highlight LineNr cterm=None ctermfg=blue ctermbg=None
-
-
+"highlight LineNr cterm=None ctermfg=blue ctermbg=None
 
 
 """ GENERAL CONFIGS
@@ -103,3 +100,7 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_winsize = 10
 map , :Lexplore<CR>
+
+" Clear diagnostic column background
+hi SignColumn ctermbg=None
+hi clear SignColumn
