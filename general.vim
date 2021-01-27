@@ -20,7 +20,13 @@ hi StatusLine gui=underline,standout
 "execute "hi TabLineSel ctermfg=".fgcolor
 "execute "hi TabLine cterm=bold ctermbg=None ctermfg=".accentcolor
 "execute "hi Title cterm=None ctermfg=".secondarycolor
-"
+
+hi TabLineFill gui=None guifg=None guibg=None
+hi TabLineSel gui=reverse
+hi TabLine gui=None guifg=None guibg=None
+hi Title gui=None guifg=None guibg=None
+
+
 " Popup menu colors
 highlight Pmenu guibg=gray guifg=white
 highlight PmenuSel guibg=white guifg=gray
