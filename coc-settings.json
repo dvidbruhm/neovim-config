@@ -15,5 +15,6 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "diagnostic.checkCurrentLine": true,
-  "python.linting.flake8Args": ["--extend-ignore=E501,E402"]
+  "python.linting.flake8Args": ["--extend-ignore=E501,E402"],
+  "coc.preferences.jumpCommand": "tabe"
 }
