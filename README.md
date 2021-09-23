@@ -24,3 +24,9 @@ sudo apt-get install -y nodejs
 :CocInstall coc-highlight
 
 ```
+
+Bonus zsh plugins I use:
+
+```
+plugins=(git history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
+```
