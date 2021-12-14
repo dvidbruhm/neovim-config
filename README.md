@@ -23,4 +23,13 @@ sudo apt-get install -y nodejs
 # For token highlight:
 :CocInstall coc-highlight
 
+# Install rust analyzer:
+:CocInstall coc-rust-analyzer
+
+```
+
+Bonus zsh plugins I use:
+
+```
+plugins=(git history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
 ```
