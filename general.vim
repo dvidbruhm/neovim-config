@@ -1,12 +1,14 @@
-
-""" BASIC STYLING
-colorscheme default
-set background=dark
-
 " Add true colors
 if (has('termguicolors'))
   set termguicolors
 endif
+
+""" BASIC STYLING
+"let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme dracula
+
 
 " Split delimitations colors and style
 set fillchars+=vert:\▏
@@ -21,15 +23,19 @@ hi StatusLine gui=underline,standout
 "execute "hi TabLine cterm=bold ctermbg=None ctermfg=".accentcolor
 "execute "hi Title cterm=None ctermfg=".secondarycolor
 
-hi TabLineFill gui=None guifg=None guibg=None
-hi TabLineSel gui=reverse
-hi TabLine gui=None guifg=None guibg=None
-hi Title gui=None guifg=None guibg=None
-
+hi TabLineFill gui=None guifg=None guibg=None cterm=None ctermfg=None ctermbg=None
+hi TabLineSel gui=reverse cterm=reverse
+hi TabLine gui=None guifg=None guibg=None cterm=None ctermfg=None ctermbg=None
+hi Title gui=None guifg=None guibg=None cterm=None ctermfg=None ctermbg=None
 
 " Popup menu colors
-highlight Pmenu guibg=gray guifg=white
-highlight PmenuSel guibg=white guifg=gray
+"highlight Pmenu guibg=black guifg=white ctermbg=black ctermfg=white
+"highlight PmenuSel guibg=white guifg=black ctermfg=black ctermbg=white
+"highlight Pmenu cterm=reverse
+"highlight PmenuSel cterm=reverse ctermfg=13 ctermbg=0
+" Fix for dracula theme
+hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
 
 " Error highlighting color:
 "highlight Error cterm=None ctermbg=DarkRed ctermfg=None
