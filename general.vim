@@ -7,8 +7,6 @@ endif
 "let g:solarized_termcolors=256
 syntax enable
 set background=dark
-colorscheme dracula
-
 
 " Split delimitations colors and style
 set fillchars+=vert:\▏
@@ -94,8 +92,9 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " Set shift-up/down to move half a screen
-nnoremap <S-Up> <C-u>
-nnoremap <S-Down> <C-d>
+" Don't set when using vim-smoothie
+"nnoremap <S-Up> <C-u>
+"nnoremap <S-Down> <C-d>
 
 " Remap leader key to space
 nnoremap <SPACE> <Nop>
@@ -103,6 +102,9 @@ let mapleader = " "
 
 " Terminal escape to return to normal mode
 tnoremap <Esc> <C-\><C-n>
+
+" Go to file in new tab
+nnoremap gf <C-W>gf
 
 
 
