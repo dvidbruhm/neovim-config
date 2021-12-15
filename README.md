@@ -31,5 +31,5 @@ sudo apt-get install -y nodejs
 Bonus zsh plugins I use:
 
 ```
-plugins=(git history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git history-substring-search zsh-autosuggestions zsh-syntax-highlighting fzf)
 ```
