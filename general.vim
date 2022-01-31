@@ -4,7 +4,6 @@ if (has('termguicolors'))
 endif
 
 """ BASIC STYLING
-"let g:solarized_termcolors=256
 syntax enable
 set background=dark
 
@@ -15,25 +14,10 @@ hi StatusLineNC gui=underline
 hi StatusLine gui=underline,standout
 
 " Tab line style
-"execute "hi TabLineFill cterm=None ctermfg=".accentcolor
-"execute "hi TabLineSel cterm=bold ctermbg=".accentcolor
-"execute "hi TabLineSel ctermfg=".fgcolor
-"execute "hi TabLine cterm=bold ctermbg=None ctermfg=".accentcolor
-"execute "hi Title cterm=None ctermfg=".secondarycolor
-
 hi TabLineFill gui=None guifg=None guibg=None cterm=None ctermfg=None ctermbg=None
 hi TabLineSel gui=reverse cterm=reverse
 hi TabLine gui=None guifg=None guibg=None cterm=None ctermfg=None ctermbg=None
 hi Title gui=None guifg=None guibg=None cterm=None ctermfg=None ctermbg=None
-
-" Popup menu colors
-"highlight Pmenu guibg=black guifg=white ctermbg=black ctermfg=white
-"highlight PmenuSel guibg=white guifg=black ctermfg=black ctermbg=white
-"highlight Pmenu cterm=reverse
-"highlight PmenuSel cterm=reverse ctermfg=13 ctermbg=0
-" Fix for dracula theme
-hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
 
 " Error highlighting color:
 "highlight Error cterm=None ctermbg=DarkRed ctermfg=None
@@ -50,6 +34,10 @@ set expandtab
 
 " Set mouse navigation
 set mouse=a
+
+" Set scroll distance to bottom/top
+set scrolloff=8
+set sidescrolloff=8
 
 " Set line numbering
 set number
@@ -98,15 +86,13 @@ vmap <S-Tab> <gv
 
 " Remap leader key to space
 nnoremap <SPACE> <Nop>
-let mapleader = " "
-
-" Terminal escape to return to normal mode
-tnoremap <Esc> <C-\><C-n>
+map <Space> <Leader>
 
 " Go to file in new tab
 nnoremap gf <C-W>gf
 
-
+" Reload config
+nnoremap <silent> <Leader><Leader> :source $MYVIMRC<cr>
 
 """ FILE EXPLORER
 " Settings for the default nvim file explorer

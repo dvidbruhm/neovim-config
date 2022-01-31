@@ -1,8 +1,17 @@
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'antoinemadec/coc-fzf'
+
+let g:coc_global_extensions = [
+    \ 'coc-pyright',
+    \ 'coc-highlight',
+    \ 'coc-rust-analyzer',
+\ ]
+
+nmap <leader>l :CocFzfList<cr>
 
 " Redefine warning colors
-hi CocWarningFloat ctermfg=blue
-hi CocWarningSign ctermfg=blue
+"hi CocWarningFloat ctermfg=blue
+"hi CocWarningSign ctermfg=blue
 
 " if hidden is not set, TextEdit might fail.
 set hidden
