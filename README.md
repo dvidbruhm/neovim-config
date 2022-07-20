@@ -1,4 +1,4 @@
-Neovim config for python and c dev. Here are the steps to get everything working.
+My Neovim config for python and rust dev. Here are the steps to get everything working.
 
 ```
 # install neovim, for example:
