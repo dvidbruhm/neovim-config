@@ -17,5 +17,7 @@
   "python.linting.enabled": true,
   "python.linting.mypyEnabled": true,
   "diagnostic.checkCurrentLine": true,
-  "coc.preferences.jumpCommand": "tabe"
+  "coc.preferences.jumpCommand": "tabe",
+  "coc.preferences.formatOnSaveFiletypes": ["rust"],
+  "diagnostic.level": "information",
 }
